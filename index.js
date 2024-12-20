@@ -13,7 +13,7 @@ const path = require("path");
 
 // Define a basic route
 app.get("/", (req, res) => {
-  res.send("Hello, World1!");
+  res.send("Hello, World2!");
 });
 
 app.get("/ejstemp", (req, res) => {

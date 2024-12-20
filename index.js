@@ -16,7 +16,7 @@ app.set("views", viewsDir);
 
 // Define a basic route
 app.get("/", (req, res) => {
-  res.send(`2 - ${viewsDir}`);
+  res.send(`3 - ${viewsDir}`);
 });
 
 app.get("/ejstemp", (req, res) => {

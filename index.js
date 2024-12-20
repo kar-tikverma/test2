@@ -8,12 +8,12 @@ const path = require("path");
 // app.use(express.static(staticDir));
 // app.use(express.static("public"));
 
-// const viewsDir = process.env.VIEWS_DIR || path.join(__dirname, "views");
-app.set("views", "views");
+const viewsDir = process.env.VIEWS_DIR || path.join(__dirname, "views");
+app.set("views", viewsDir);
 
 // Define a basic route
 app.get("/", (req, res) => {
-  res.send("Hello, World4!");
+  res.send("Hello, World5!");
 });
 
 app.get("/ejstemp", (req, res) => {

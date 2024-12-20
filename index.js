@@ -8,7 +8,7 @@ const path = require("path");
 // app.use(express.static(staticDir));
 // app.use(express.static("public"));
 
-const viewsDir = process.env.STATIC_DIR || path.join(__dirname, "views");
+const viewsDir = process.env.STATIC_DIR || path.join(__dirname, "views") || "views";
 app.set("views", viewsDir);
 
 // Define a basic route
